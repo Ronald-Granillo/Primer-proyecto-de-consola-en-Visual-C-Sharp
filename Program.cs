@@ -11,16 +11,17 @@ namespace Primer_proyecto_de_consola_en_Visual_C_Sharp
         static void Main(string[] args)
         {
 
-            int num1 = 0; int num2 = 0;
+            double num1 = 0; double num2 = 0;
 
             Console.WriteLine("Calculadora - Consola C#\r");
+
             Console.WriteLine("------------------------\n");
 
             Console.WriteLine("Digite el primer numero, y presione enter");
-            num1 = Convert.ToInt32(Console.ReadLine());
+            num1 = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Digite el segundo numero, y presione enter");
-            num2 = Convert.ToInt32(Console.ReadLine());
+            num2 = Convert.ToDouble(Console.ReadLine());
 
 
             Console.WriteLine("¿Que quieres hacer?");
@@ -34,10 +35,10 @@ namespace Primer_proyecto_de_consola_en_Visual_C_Sharp
 
             switch (Console.ReadLine())
             {
-                case "a":
+                case "s":
                     Console.WriteLine($"El Resultado es:  {num1} + {num2} = " + (num1 + num2));
                     break;
-                case "s":
+                case "r":
                     Console.WriteLine($"El Resultado es: {num1} - {num2} = " + (num1 - num2));
                     break;
                 case "m":
