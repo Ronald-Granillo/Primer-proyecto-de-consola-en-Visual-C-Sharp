@@ -45,7 +45,13 @@ namespace Primer_proyecto_de_consola_en_Visual_C_Sharp
                     Console.WriteLine($"El Resultado es: {num1} * {num2} = " + (num1 * num2));
                     break;
                 case "d":
-                    Console.WriteLine($"El Resultado es: {num1} / {num2} = " + (num1 / num2));
+                   
+                    while (num2 == 0)
+                    {
+                        Console.WriteLine("Enter a non-zero divisor: ");
+                        num2 = Convert.ToInt32(Console.ReadLine());
+                    }
+                    Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
                     break;
             }
 
